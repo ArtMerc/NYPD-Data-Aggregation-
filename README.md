@@ -2,6 +2,10 @@
 Data Aggregation Analysis on the 123rd NYPD Precinct, containing age, race, and sex.
 
 
+
+INFORMATION ABOUT NYPD DATASET:
+
+
 This is a breakdown of every arrest effected in NYC by the NYPD during the current year.
 This data is manually extracted every quarter and reviewed by the Office of Management Analysis and Planning.
 Each record represents an arrest effected in NYC by the NYPD and includes information about the type of crime, the location and time of enforcement.
