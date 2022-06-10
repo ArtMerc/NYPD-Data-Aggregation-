@@ -14,60 +14,34 @@ This data can be used by the public to explore the nature of police enforcement 
 Please refer to the attached data footnotes for additional information about this dataset.
 
 
-Column Name	Description	Type
-ARREST_KEY	
-Randomly generated persistent ID for each arrest
-Plain Text
-ARREST_DATE	
-Exact date of arrest for the reported event
-Date & Time
-PD_CD	
-Three digit internal classification code (more granular than Key Code)
-Number
-PD_DESC	
-Description of internal classification corresponding with PD code (more granular than Offense Description)
-Plain Text
-KY_CD	
-Three digit internal classification code (more general category than PD code)
-Number
-OFNS_DESC	
-Description of internal classification corresponding with KY code (more general category than PD description)
-Plain Text
-LAW_CODE	
-Law code charges corresponding to the NYS Penal Law, VTL and other various local laws
-Plain Text
-LAW_CAT_CD	
-Level of offense: felony, misdemeanor, violation
-Plain Text
-ARREST_BORO	
-Borough of arrest. B(Bronx), S(Staten Island), K(Brooklyn), M(Manhattan), Q(Queens)
-Plain Text
-ARREST_PRECINCT	
-Precinct where the arrest occurred
-Number
-JURISDICTION_CODE	
-Jurisdiction responsible for arrest. Jurisdiction codes 0(Patrol), 1(Transit) and 2(Housing) represent NYPD whilst codes 3 and more represent non NYPD jurisdictions
-Number
-AGE_GROUP	
-Perpetrator’s age within a category
-Plain Text
-PERP_SEX	
-Perpetrator’s sex description
-Plain Text
-PERP_RACE	
-Perpetrator’s race description
-Plain Text
-X_COORD_CD	
-Midblock X-coordinate for New York State Plane Coordinate System, Long Island Zone, NAD 83, units feet (FIPS 3104)
-Number
-Y_COORD_CD	
-Midblock Y-coordinate for New York State Plane Coordinate System, Long Island Zone, NAD 83, units feet (FIPS 3104)
-Number
-Latitude	
-Latitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)
-Number
-Longitude	
-Longitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)
-Number
-New Georeferenced Column	
-Point
+=======================================CHANGE NOTES==================================================== 
+-Updated complete dataframe merge
+-Matched information from previous project; datamerge and printed out the merged.head to see
+-Identified merged dataframe types such as AGE, SEX, RACE 
+-Began analysis of Precincts decded to choose Precinct NUMBER 123 with '767' values 
+
+-Looked up precinct by age group
+-Did an analysis on precincts based off race group
+
+-Attached AGE and SEX and RACE group to Precinct 123
+-Abvle to print an output analysis off all age, sex, race and the nuymber of arrests for precinct 123 
+
+-Able to chart and graph out groups of Age and Sex comparing which Age group and which Sex group witin
+123 precinct has the highest number of recorded arrest in data.
+
+=======================================CHANGE NOTES====================================================
+-Revised the chart as per feedback to display sex and age from aggregates on 123 precinct. 
+
+-Visualization Added for 3 different charts consisting of different data.
+
+-Combined DF Created for: ARRESTS BY AGE Across NYC.
+-CHART assigned with merged data for: ARRESTS BY AGE Across NYC.
+
+-Combined DF Created for: ARRESTS BY RACE Across NYC.
+-CHART assigned with merged data for: ARRESTS BY RACE Across NYC.
+
+-Combined dataframe consisting of races specifically: Black & White.
+-Combined dataframe consisting of ages of the two race groups above.
+
+-CHART assigned using the combined data of Black & White races and Combined Data of Total Arrests.
+-CHART assigned as: Number of Arrests of Black and White People In NYC.
